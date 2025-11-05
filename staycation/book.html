@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Stay | Staycation in Tokyo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="logo"><span>S</span> Staycation in Tokyo</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container listings">
+    <h2>Book Your Stay</h2>
+    <form action="backend/sendBooking.php" method="POST" style="max-width:500px; margin:auto;">
+      <label>Name</label>
+      <input type="text" name="name" required style="width:100%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:6px;">
+      <label>Email</label>
+      <input type="email" name="email" required style="width:100%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:6px;">
+      <label>Check-in Date</label>
+      <input type="date" name="checkin" required style="width:100%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:6px;">
+      <label>Check-out Date</label>
+      <input type="date" name="checkout" required style="width:100%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:6px;">
+      <label>Guests</label>
+      <input type="number" name="guests" required style="width:100%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:6px;">
+      <button type="submit" class="btn btn-primary" style="margin-top:10px;">Send Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Staycation in Tokyo — All rights reserved.</p>
+  </footer>
+</body>
+</html>
